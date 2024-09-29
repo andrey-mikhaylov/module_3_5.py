@@ -1,12 +1,25 @@
-
+def get_multiplied_digits(n: int) -> int:
+    mult = 1
+    return mult
 
 
 def test():
+    result = get_multiplied_digits(40203)
+    print(result)
+    """ 
+    Вывод на консоль:
+    24
+    """
     pass
 
 
 def main():
     pass
+
+
+test()
+main()
+
 
 
 """
