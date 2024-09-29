@@ -1,6 +1,8 @@
 def get_multiplied_digits(n: int) -> int:
-    mult = 1
-    return mult
+    if n < 10:
+        return n
+    s = str(n)
+    return int(s[0]) * get_multiplied_digits(int(s[1:]))
 
 
 def test():
@@ -14,7 +16,16 @@ def test():
 
 
 def main():
-    pass
+    print(get_multiplied_digits(1))
+    print(get_multiplied_digits(9))
+    print(get_multiplied_digits(11))
+    print(get_multiplied_digits(1111111111111111))
+    print(get_multiplied_digits(2222222222222222))
+    print(get_multiplied_digits(2222222222200000000000000022222))
+    print(get_multiplied_digits(19))
+    print(get_multiplied_digits(29))
+    print(get_multiplied_digits(99))
+    print(get_multiplied_digits(90))
 
 
 test()
